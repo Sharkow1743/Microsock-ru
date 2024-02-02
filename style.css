@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu'; /* Используем шрифт Ubuntu для всего текста на сайте */
+    font-weight: 400; /* Укажем нормальную толщину шрифта */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif; /* Используем шрифт Ubuntu для заголовков */
+    font-weight: 700; /* Укажем жирную толщину шрифта для заголовков */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Изменим цвет фона на более тёмный */
+    color: #fff; /* Изменим цвет текста на белый */
+}
+
+header {
+    background-color: #333; /* Оставим немного тёмнее для контраста */
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #006699; /* Используем более тёмный синий цвет для кнопок */
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333; /* Тёмно-серый цвет фона */
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333; /* Оставим немного тёмнее для контраста */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+p, ul, footer {
+    font-family: 'Ubuntu'; /* Используем шрифт Ubuntu для всего текста на сайте */
+    font-weight: 400; /* Укажем нормальную толщину шрифта */
+}
+
+/* Ранее добавленное подключение шрифта и стили */
+
+/* Дополнительные стили для кнопок */
+a {
+    display: inline-block; /* Располагаем ссылки в виде блока */
+    padding: 10px 20px; /* Задаем отступы для кнопки */
+    margin: 10px; /* Добавляем немного отступа между кнопками */
+    color: #fff; /* Цвет текста внутри кнопки */
+    background-color: #00aaff; /* Цвет фона кнопки */
+    border: none; /* Убираем границу у кнопки */
+    border-radius: 5px; /* Закругляем углы кнопки */
+    text-decoration: none; /* Убираем стандартное подчеркивание у ссылки */
+    font-weight: 500; /* Укажем среднюю толщину шрифта */
+    transition: background-color 0.3s; /* Добавляем плавное изменение цвета фона при наведении курсора */
+}
+
+a:hover {
+    background-color: #0088cc; /* Изменяем цвет фона кнопки при наведении */
+}
+
+
+/* Общие стили */
+
+/* ... (предыдущие стили) ... */
+
+/* Дополнительные стили для устройств с шириной экрана 760px и ниже */
+@media (max-width: 760px) {
+    header {
+        padding: 5px; /* Уменьшаем отступы в шапке */
+    }
+
+    .logo img {
+        max-width: 40px; /* Уменьшаем размер логотипа */
+    }
+
+    .logo h1 {
+        font-size: 1.2em; /* Уменьшаем размер названия компании */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Меняем направление расположения кнопок на вертикальное */
+        align-items: center;      /* Выравниваем кнопки по центру */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Увеличиваем отступы между кнопками */
+    }
+
+    nav ul li a {
+        padding: 8px; /* Уменьшаем отступы у кнопок */
+        margin: 5px 0; /* Увеличиваем отступы у кнопок */
+    }
+
+    main {
+        padding: 10px; /* Уменьшаем отступы для контента */
+        border-radius: 0; /* Убираем скругление углов блока с контентом */
+    }
+}
